@@ -7,7 +7,15 @@ Passare come parametri GET name, mail e age e verificare
 che mail contenga un punto e una chiocciola e che age sia un numero. 
 Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
 */
+    $name = $_GET["name"];
+    $email = $_GET["email"];
+    $age = $_GET["age"];
 
+    if (strlen($name) > 3 && strpos($email, "@") && strpos($email, ".") && is_numeric($age)) {
+        echo "<h1>ACCESSO RIUSCITO</h1> <h2>Benvenuto " . $name . "!</h2>";
+    } else {
+        echo "<h1>ACCESSO NEGATO</h1>";
+    }
 ?>
 
 <!DOCTYPE html>
