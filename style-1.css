@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    font-size: 24px;
+}
+
+
+.my-1 {
+    margin: 20px 0;
+}
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.d-flex div {
+    margin-right: 20px;
+}

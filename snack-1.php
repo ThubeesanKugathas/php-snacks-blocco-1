@@ -53,19 +53,20 @@ Olimpia Milano - Cantù | 55-60
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-1.css">
     <title>SNACK UNO</title>
 </head>
 <body>
     <h1>Partite basket giornata 19:</h1>
     <ul>
         <?php for ($i = 0; $i < count($matches); $i++) { ?>
-            <li class="my-1"><?php echo "Partita nr. " . ($i + 1) ?>
+            <li class="my-1">
                 <ul>
                     <li class="d-flex">
-                        <div>
+                        <div class="text">
                             <?php echo $matches[$i]["casa"] ?> - <?php echo $matches[$i]["puntiCasa"] ?>
                         </div>
-                        <div>
+                        <div class="text">
                             <?php echo $matches[$i]["puntiOspite"] ?> - <?php echo $matches[$i]["ospite"] ?>
                         </div>
                     </li>
@@ -75,20 +76,3 @@ Olimpia Milano - Cantù | 55-60
     </ul>
 </body>
 </html>
-
-<style type="text/css">
-    ul {
-        list-style: none;
-        font-size: 24px;
-    }
-    .my-1 {
-        margin: 20px 0;
-    }
-    .d-flex {
-        display: flex;
-    }
-
-    .d-flex div {
-        margin-right: 20px;
-    }
-</style>
