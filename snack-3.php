@@ -7,7 +7,44 @@ DD-MM-YYYY es 01-01-2007 e come valore un array di post associati a quella data.
 Stampare ogni data con i relativi post.
 Qui l’array di esempio: https://www.codepile.net/pile/R2K5d68z
 */
-
+    $posts = [
+        "02-01-2022" => [
+            [
+                "title" => "Titolo 1",
+                "author" => "Pinco Pallo",
+                "post" => "post 1"
+            ],
+        ],
+        "25-01-2022" => [
+            [
+                "title" => "Titolo 2",
+                "author" => "Pinco Pallo",
+                "post" => "post 2"
+            ],
+            [
+                "title" => "Titolo 3",
+                "author" => "Pinco Pallo",
+                "post" => "post 3"
+            ],
+        ],
+        "07-02-2022" => [
+            [
+                "title" => "Titolo 4",
+                "author" => "Pinco Pallo",
+                "post" => "post 4"
+            ],
+            [
+                "title" => "Titolo 5",
+                "author" => "Pinco Pallo",
+                "post" => "post 5"
+            ],
+            [
+                "title" => "Titolo 6",
+                "author" => "Pinco Pallo",
+                "post" => "post 6"
+            ],
+        ],
+    ];
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +56,12 @@ Qui l’array di esempio: https://www.codepile.net/pile/R2K5d68z
     <title>SNACK TRE</title>
 </head>
 <body>
-    
+    <ul>
+        <?php foreach($posts as $data => $post) { ?>
+            <li>
+                <h2><?php echo $data ?></h2>
+            </li>
+        <?php } ?>
+    </ul>
 </body>
 </html>
