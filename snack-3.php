@@ -57,10 +57,16 @@ Qui l’array di esempio: https://www.codepile.net/pile/R2K5d68z
 </head>
 <body>
     <ul>
-        <?php foreach($posts as $data => $post) { ?>
-            <li>
-                <h2><?php echo $data ?></h2>
-            </li>
+        <?php foreach($posts as $date => $post) { ?>
+            <h2><?php echo $date ?></h2>
+            <ul>
+                <?php foreach ($post as $key => $information) { ?>
+                    <h3>Titolo: <?php echo $information["title"] ?></h3>
+                    <h3>Titolo: <?php echo $information["author"] ?></h3>
+                    <h3>Titolo: <?php echo $information["post"] ?></h3>
+                    <hr>
+                <?php } ?>
+            </ul>
         <?php } ?>
     </ul>
 </body>
