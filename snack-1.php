@@ -59,14 +59,14 @@ Olimpia Milano - Cantù | 55-60
     <h1>Partite basket giornata 19:</h1>
     <ul>
         <?php for ($i = 0; $i < count($matches); $i++) { ?>
-            <li><?php echo "Partita nr. " . ($i + 1) ?>
+            <li class="my-1"><?php echo "Partita nr. " . ($i + 1) ?>
                 <ul>
-                    <li>
+                    <li class="d-flex">
                         <div>
-                            <?php echo $matches[$i]["casa"] ?>: <?php echo $matches[$i]["puntiCasa"] ?>
+                            <?php echo $matches[$i]["casa"] ?> - <?php echo $matches[$i]["puntiCasa"] ?>
                         </div>
                         <div>
-                            <?php echo $matches[$i]["ospite"] ?>: <?php echo $matches[$i]["puntiOspite"] ?>
+                            <?php echo $matches[$i]["puntiOspite"] ?> - <?php echo $matches[$i]["ospite"] ?>
                         </div>
                     </li>
                 </ul>
@@ -75,3 +75,20 @@ Olimpia Milano - Cantù | 55-60
     </ul>
 </body>
 </html>
+
+<style type="text/css">
+    ul {
+        list-style: none;
+        font-size: 24px;
+    }
+    .my-1 {
+        margin: 20px 0;
+    }
+    .d-flex {
+        display: flex;
+    }
+
+    .d-flex div {
+        margin-right: 20px;
+    }
+</style>
