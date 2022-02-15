@@ -28,9 +28,11 @@ tenendo conto che l’array non dovrà contenere lo stesso numero più di una vo
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style-4.css">
     <title>SNACK QUATTRO</title>
 </head>
 <body>
+    <h1>15 RANDOM NUMBERS:</h1>
     <ul>
         <?php foreach ($arrayNum as $num) { ?>
             <li><?php echo $num ?></li>
